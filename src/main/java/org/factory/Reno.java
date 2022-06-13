@@ -7,10 +7,10 @@ public class Reno extends Automobiles{
         int b = 15;
         int p = 1;
 
-        String c = "Едет";
-        String x = "Приехал";
+        String c = "Едет Reno";
+        String x = "Приехал Reno";
         while (p < 20) {
-            p++;
+            ++p;
             int f = a + (int) (Math.random() * b);
             Thread.sleep(1000);
             if (f < 10) {
