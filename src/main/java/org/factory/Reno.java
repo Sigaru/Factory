@@ -1,9 +1,8 @@
 package org.factory;
 
-public class Lada extends Automobiles {
-
-
-    public  void moveFront() throws InterruptedException {
+public class Reno extends Automobiles{
+    @Override
+    public void moveFront() throws InterruptedException {
         int a = 0;
         int b = 15;
         int p = 1;
@@ -22,6 +21,7 @@ public class Lada extends Automobiles {
             }
         }
     }
+
     @Override
     public void turnLeft() {
 
@@ -33,17 +33,17 @@ public class Lada extends Automobiles {
     }
 
     @Override
-    public void Reverse() {
-
-    }
-
-    @Override
     public void moveLeft() {
 
     }
 
     @Override
     public void moveRight() {
+
+    }
+
+    @Override
+    public void Reverse() {
 
     }
 }
