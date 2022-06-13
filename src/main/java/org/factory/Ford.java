@@ -8,7 +8,8 @@ public class Ford extends Automobiles {
         int b = 15;
         int p = 1;
 
-        String c = "Едет прямо";
+        String c = "Едет";
+        String x = "Приехал";
         while (p < 20) {
             p++;
             int f = a + (int) (Math.random() * b);
@@ -17,7 +18,7 @@ public class Ford extends Automobiles {
                 System.out.print(c + ", ");
             }
             if (f > 10) {
-                System.out.println(c + "." + p);
+                System.out.println(x + "." + p);
                 break;
             }
 
