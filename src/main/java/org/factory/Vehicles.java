@@ -2,21 +2,13 @@ package org.factory;
 
 public interface Vehicles {
 
-    static void moveFront() {
+     void moveFront();
 
-    }
-
-    static void turnLeft() {
-
-    }
+    void turnLeft();
 
 
-    static void turnRight() {
+    void turnRight();
 
-    }
-
-    static void Reverse() {
-
-    }
+    void Reverse();
 
 }

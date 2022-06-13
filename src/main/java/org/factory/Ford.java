@@ -2,19 +2,29 @@ package org.factory;
 
 public class Ford extends Automobiles {
 
-    public static void moveFront() {
+    public void moveFront() {
         System.out.print("Едет прямо, ");
     }
 
-    public static void moveLeft() {
+    @Override
+    public void turnLeft() {
+
+    }
+
+    @Override
+    public void turnRight() {
+
+    }
+
+    public void moveLeft() {
         System.out.println("Едет на лево");
     }
 
-    public static void moveRight() {
+    public void moveRight() {
         System.out.print("Едет на право, ");
     }
 
-    public static void Reverse() {
+    public void Reverse() {
         System.out.println("Едет обратно.");
     }
 }

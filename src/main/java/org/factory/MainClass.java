@@ -4,12 +4,14 @@ class MainClass {
 
     public static void main(String[] args) {
 
-        Ford.moveFront();
-        Ford.moveLeft();
-        Ford.moveRight();
-        Ford.Reverse();
+        Ford ford = new Ford();
+        ford.moveFront();
+        ford.moveLeft();
+        ford.moveRight();
+        ford.Reverse();
         System.out.println("__________________________________________");
-        Lada.moveFront();
+        Lada lada = new Lada();
+        lada.moveFront();
 
     }
 }
