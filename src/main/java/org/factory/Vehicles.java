@@ -2,7 +2,7 @@ package org.factory;
 
 public interface Vehicles {
 
-    void moveFront() throws InterruptedException;
+    int moveFront() throws InterruptedException;
 
     void turnLeft();
 

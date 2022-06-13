@@ -2,27 +2,36 @@ package org.factory;
 
 public class Lada extends Automobiles {
 
+    /**
+     * Реализация абстрактного метода
+     * @return
+     */
+    @Override
+    public String getBrandName() {
+        return "Lada";
+    }
 
-    public  void moveFront() throws InterruptedException {
-        int a = 0;
-        int b = 15;
+    public int moveFront() throws InterruptedException {
         int p = 1;
+        System.out.print(getBrandName() + " ");
 
-        String c = "Едет";
-        String x = "Приехал";
         while (p < 20) {
             p++;
             int f = a + (int) (Math.random() * b);
-            Thread.sleep(1000);
+            Thread.sleep(sleepInSeconds);
+
             if (f < 10) {
-                System.out.print(c + ", ");
+                System.out.print(movingText + ", ");
             }
+
             if (f > 10) {
-                System.out.println(x + "." + p);
+                System.out.println(finishText + "." + p);
                 break;
             }
         }
+        return p;
     }
+
     @Override
     public void turnLeft() {
 
