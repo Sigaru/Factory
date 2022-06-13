@@ -25,4 +25,14 @@ public class Lada extends Automobiles {
     public void Reverse() {
 
     }
+
+    @Override
+    public void moveLeft() {
+
+    }
+
+    @Override
+    public void moveRight() {
+
+    }
 }

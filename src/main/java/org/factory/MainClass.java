@@ -3,14 +3,16 @@ package org.factory;
 class MainClass {
 
     public static void main(String[] args) {
+        VehiclesFactory factory = new VehiclesFactory();
 
-        Ford ford = new Ford();
+        Automobiles ford = factory.getVehicle("ford");
         ford.moveFront();
         ford.moveLeft();
         ford.moveRight();
         ford.Reverse();
         System.out.println("__________________________________________");
-        Lada lada = new Lada();
+
+        Automobiles lada = factory.getVehicle("lada");
         lada.moveFront();
 
     }
