@@ -1,6 +1,6 @@
 package org.factory;
 
-public class Car extends Automobiles {
+public class Ford extends Automobiles {
 
     public static void moveFront() {
         System.out.print("Едет прямо, ");
