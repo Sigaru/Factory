@@ -1,9 +1,8 @@
 package org.factory;
 
-public class Ford extends Automobiles {
-
+public class Reno extends Automobiles{
+    @Override
     public void moveFront() throws InterruptedException {
-
         int a = 0;
         int b = 15;
         int p = 1;
@@ -21,7 +20,6 @@ public class Ford extends Automobiles {
                 System.out.println(x + "." + p);
                 break;
             }
-
         }
     }
 

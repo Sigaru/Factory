@@ -2,18 +2,25 @@ package org.factory;
 
 class MainClass {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+
         VehiclesFactory factory = new VehiclesFactory();
+
+
 
         Automobiles ford = factory.getVehicle("ford");
         ford.moveFront();
-        ford.moveLeft();
-        ford.moveRight();
-        ford.Reverse();
-        System.out.println("__________________________________________");
+
+
 
         Automobiles lada = factory.getVehicle("lada");
         lada.moveFront();
+
+
+
+        Automobiles reno = factory.getVehicle("reno");
+        reno.moveFront();
+
 
     }
 }
